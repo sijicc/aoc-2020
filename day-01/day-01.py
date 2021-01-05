@@ -52,4 +52,6 @@ def two():
             main_number = main_number + 1
         i = i + 1
 
+        
+one()
 two()
