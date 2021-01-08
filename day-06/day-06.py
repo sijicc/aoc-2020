@@ -21,7 +21,6 @@ def two():
     groups_divided = []
     valid_ans = 0
     characters = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c" , "v", "b", "n", "m"]
-    y = 0
     for line in input:
         x = line.replace("\n", " ")
         fixed.append(x)
