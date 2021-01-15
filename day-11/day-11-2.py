@@ -19,9 +19,6 @@ while True:
     print(str(newest_data) + " NEWEST DATA")
     for line in range(0, len(newest_data)):
         temp_list = []
-        print("###########################")
-        print(newest_data[line])
-        print("###########################")
         for character in range(0, len(newest_data[line])):
             line_sum = []
             sum_of_seats_around = 0
@@ -79,25 +76,18 @@ while True:
 
 
             if newest_data[line][character] == ".":
-                print("dot")
                 x = newest_data[line][character]
                 temp_list.extend(str(x))
 
             elif sum_of_seats_around == 0 and newest_data[line][character] != ".":
-                print(sum_of_seats_around)
-                print("0 to 1")
                 x = newest_data[line][character].replace("0", "1")
                 temp_list.extend(str(x))
 
             elif sum_of_seats_around >= 5 and newest_data[line][character] != ".":
-                print(sum_of_seats_around)
-                print("1 to 0")
                 x = newest_data[line][character].replace("1", "0")
                 temp_list.extend(str(x))
 
             elif 0 < sum_of_seats_around < 5 and newest_data[line][character] != ".":
-                print(sum_of_seats_around)
-                print("keep value")
                 x = newest_data[line][character]
                 temp_list.extend(str(x))
 
